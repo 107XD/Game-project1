@@ -11,18 +11,26 @@ namespace Kursa_Darbs_WBF_ES_DVDZ1
 {
     public partial class MainWindow : Window
     {
-        private readonly List<int> correctRecipeOrder = new List<int> { 1, 2, 3, 4, 5 };
+         private readonly List<int> correctRecipeOrder = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, };
         private List<BurgerIngredient> ingredients = new List<BurgerIngredient>();
         private BurgerIngredient selectedIngredient;
         private Point offset;
 
         // Dictionary to map ingredient types to numbers
-        private Dictionary<string, int> ingredientNumbers = new Dictionary<string, int>
-        {
-            { "Auksa Maizes", 1 },
-            { "Gala", 2 },
-            // Add more mappings for each ingredient type
-        };
+       private Dictionary<string, int> ingredientNumbers = new Dictionary<string, int>
+    {
+    { "Auksa Maizes", 1 },
+    { "Gala", 2 },
+    { "Gurki", 3 },
+    { "Kecups", 4 },
+    { "Mahoneze", 5 },
+    { "Maizes Apaksa", 6 },
+    { "Salat Lapa", 7 },
+    { "Siers", 8 },
+    { "Sinepes", 9 },
+    { "Sipoli", 10 },
+    { "Tomati", 11 }
+    };
 
         public MainWindow()
         {
